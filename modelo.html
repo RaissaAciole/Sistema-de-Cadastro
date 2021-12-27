@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Sistema de Cadastro</title>
+</head>
+<body>
+    <h1>Cadastre-se</h1>
+
+    <section>
+        <!--Cabeçalho: Nome / Sobrenome / E-mail / Senha-->
+        <div>
+            <p><strong>Nome: </strong><input type="text" name="nome" id="nome">
+            <strong>Sobrenome: </strong><input type="text" name="sobrenome" id="sobrenome"></p>
+            <p><strong>E-mail: </strong><input type="email" name="email" id="email"></p>
+            <p><strong>Senha: </strong><input type="password" name="senha" id="senha"></p>
+        </div>
+
+        <!--Senioridade-->
+        <div id="radio">
+        <p>
+            <strong>Senioridade:</strong>
+            <label class="radio">
+                <input type="radio" name="rad" checked>Júnior
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="rad" >Pleno
+            </label> 
+
+            <label class="radio">
+                <input type="radio" name="rad">Sênior
+            </label>
+        </p>
+        </div>
+
+        <!--CheckBox de Tecnologias-->
+        <div id="box">
+            <strong>Tecnologias:</strong>
+                <input type="checkbox" name="js" id="js">JavaScript
+                <input type="checkbox" name="php" id="php">PHP
+                <input type="checkbox" name="phyton" id="phyton">Phyton
+                <input type="checkbox" name="java" id="java">Java
+                <input type="checkbox" name="htmlCss" id="htmlCss">HTML & CSS
+                <p><input type="checkbox" name="cc++" id="cc++">C/C++
+                <input type="checkbox" name="basic" id="basic">Basic/VisualBasic
+                <input type="checkbox" name="ruby" id="ruby">Ruby
+                <input type="checkbox" name="lua" id="lua">Lua
+                <input type="checkbox" name="c#" id="c#">C#
+                </p>
+        </div>
+
+        <!--Área de texto e botão-->
+        <div id="area">
+            <p><strong>Nos conte um pouco sobre você!</strong></p>
+            <textarea name="texto" id="texto" cols="50" rows="7"></textarea>
+            <p><input type="button" value="Concluir" id="botao" onclick="concluir()"></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
